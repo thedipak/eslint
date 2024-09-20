@@ -1,7 +1,19 @@
+import React from 'react';
+import Issues from './components/Issues';
+import PerformanceIssues from './components/PerformanceIssues';
+
 function App() {
-  const user = { name: 'Mike', age: 10 };
-  console.log('user', user);
-  return <div className='container'>Hello</div>;
+  // let value = 10;
+  // console.log('user', value);
+  // console.log('hello');
+  return (
+    <div className='container'>
+      <h1> Gen AI - ESlint </h1>
+
+      <Issues />
+      <PerformanceIssues />
+    </div>
+  );
 }
 
 export default App;
